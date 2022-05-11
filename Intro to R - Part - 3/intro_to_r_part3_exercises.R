@@ -1,0 +1,237 @@
+#######################################################
+#######################################################
+############    COPYRIGHT - DATA SOCIETY   ############
+#######################################################
+#######################################################
+
+## INTRO TO R PART3 EXERCISES ##
+
+## NOTE: To run individual pieces of code, select the line of code and
+##       press ctrl + enter for PCs or command + enter for Macs
+
+
+#### Exercise 1 ####
+# =================================================-
+
+#### Question 1 ####
+
+# Create a vector of column indices named "column_keep" with columns 24:26 and 52:55 using `c`.
+# Subset CMP using `column_keep` to retain the specified columns in a smaller dataset named `sub_cmp`.
+# Confirm the structure of `sub_cmp`. 
+# How many columns are in `sub_cmp`? How many columns are integers?
+
+# Answer: 
+
+
+
+#================================================-
+#### Question 2 ####
+
+# Summarize the variables in `sub_cmp`.
+# Which variable has the most NA's?
+
+# Answer: 
+
+
+
+#================================================-
+#### Question 3 ####
+
+# Create a list of logical values where NA's in ManufacturingProcess11 are TRUE.
+# Save this list of logical values to a variable names `also_na`.
+# Use `which` to find the row indexes of the NA values and save that list of row indexes to `idofnas`.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 4 ####
+
+# Compute the mean of the `ManufacturingProcess11` with the NAs removed.
+
+# Answer:
+
+
+
+#================================================-
+#### Question 5 ####
+
+# Assign the mean to the entry(s) with the `NA` in ManufacturingProcess11.
+# Check the result.
+
+# Answer:
+
+
+
+#### Exercise 2 ####
+# =================================================-
+
+#### Question 1 ####
+
+temp_var = c(24, 26, 4, 12, 52, 3, 16)
+
+# Write an `ifelse` statement that states:
+
+# If entries in `temp_var` is greater than 15
+#   Then subtract 15 from `temp_var`
+# Otherwise return temp_var unchanged.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 2 ####
+
+vec1 = c(24, 26, 4, 12, 52, 3, 16)
+
+# Find the length of `vec1` and store it a variable `vec1_len`.
+
+# Answer: 
+
+
+
+#================================================-
+#### Question 3 ####
+
+# Write the first part of the for loop for `i` from 1 to `vec1_len`, 
+# with closed curly braces at the end.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 4 ####
+
+# Update the code from Question 1 to make the `ifelse` statement dynamic. 
+# Replace `temp_var` with `vec1[i]`.
+# Then assign `vec1[i]` to equal the output of the `ifelse` statement.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 5 ####
+
+# Combine the answers for Question 3 and Question 4 to create a completed for loop.
+# Execute the code.
+# What is the new value of the first entry in `vec1`?
+
+# Answer: 
+
+
+
+
+#================================================-
+#### Question 6 ####
+
+
+vec1 = c(24, 26, 4, 12, 52, 3, 16)
+
+# Adjust the code from Question 5 to create a new vector, `vec2`, that 
+# assigns the transformed version of `vec1` created by the for loop to `vec2` and `vec1` maintains its original value.
+# Confirm that the value of the first entry in `vec1` remains the same and that the value of the first entry in `vec2` equals nine.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 7 ####
+
+namelist = c("Susie", "Nick", "Kate", "Simon", "Jamal", "Eduardo")
+
+# Create a function named `Greetings` that takes a `listofnames` as an argument.
+# The function should go through a vector of names one by one, and print:
+
+# "Welcome to coding in RStudio, NAME!" 
+
+# Where NAME is the entry in `listofnames` vector.
+# Hint: You will need to use `length`, `paste0`, `print`, and a `for` loop.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 8 ####
+
+# Execute `Greetings` using `namelist`.
+
+# Answer:
+
+
+
+
+#### Exercise 3 ####
+# =================================================-
+
+#### Question 1 ####
+# Load the `tidyverse` package. (Install if you don't have it already)
+# Install and load `babynames` package.
+# (this dataset is native to R)
+# Filter all values in `babynames` that year is 2015.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 2 ####
+# Filter all values in babynames that year is 2015 and sex is F.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 3 ####
+#Filter all values that are below 1000 counts (`n`) and that are between 1947-1975.
+
+# Answer:
+
+
+
+
+#================================================-
+#### Question 4 ####
+# Filter all values that are either sex is F or n is above 1000 counts, all in 1975.
+
+# Answer:
+
+
+#================================================-
+#### Question 5 #### 
+# Arrange `babynames` by year in descending order.
+
+# Answer:
+
+
+
+#================================================-
+#### Question 6 ####
+# Now arrange by year then by sex. What are the name and year in row 1?
+
+# Answer: 
+
+
+
+#================================================-
+#### Question 7 ####
+# Now arrange by sex, year, and name descending. What is the name in the first row?
+
+# Answer:
+
+
+
